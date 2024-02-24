@@ -209,3 +209,30 @@ section h2 {
 .flex {
     display: flex;
 }
+
+
+aside li > ul {
+    display: none;
+}
+
+
+
+li:hover > ul {
+    display: block;
+}
+
+
+aside li {
+    background-color: #e4e4ec;
+    padding: 18px 15px;
+}
+
+
+li:hover {
+    background-color: #fd8300;
+}
+
+.aside li {
+    background-color: #e4e4ec;
+
+}
