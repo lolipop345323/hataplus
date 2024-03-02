@@ -7,7 +7,10 @@ body {
     background-color: #1f1f56;
     padding-bottom: 21px;
     padding-top: 21px;
-    margin-bottom: 15px;
+}
+
+.logo-contactinfo {
+    padding: 35px 0px;
 }
 
 .header-line a {
@@ -179,20 +182,19 @@ aside ul {
 }
 
 
-
-.ul1 {
-    text-align: left;
-}
-
-
-.ul2 {
-    text-align: center;
+.main-flex {
+    column-gap: 25px;
 }
 
 
 footer {
     background-color:  #ededf5;
+}
+
+
+footer > .wrapper {
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -216,13 +218,13 @@ section h2 {
 }
 
 
-aside li > ul {
+aside li + ul {
     display: none;
 }
 
 
 
-li:hover > ul {
+li:hover + ul {
     display: block;
 }
 
@@ -233,15 +235,18 @@ aside li {
 }
 
 
+aside ul {
+    padding: 0;
+}
+
+
 li:hover {
     background-color: #fd8300;
 }
 
 .aside li {
     background-color: #e4e4ec;
-
 }
-
 
 
 .li {
@@ -258,30 +263,66 @@ li:hover {
 }
 
 
-
-.ul1 {
-   margin-left: 30px;
+.phone {
+    position: relative;
 }
 
-
-footer .ul1, .ul2 {
-    justify-content: space-between;
-}
-
-
-footer .ul2 {
-    margin-left: 140px;
-}
-
-
-footer a {
-    margin-left: 180px;
+.phone:before {
+    content:"";
+    width: 17px;
+    height: 17px;
+    background-image: url(../images/phone.png);
+    position: absolute;
+    left: -28px;
+    background-repeat: no-repeat;
 }
 
 
 
-footer .a2 {
-    margin-left: 90px;
+.email {
+    position: relative;
 }
 
 
+.email:before {
+    content:"";
+    width: 18px;
+    height: 13px;
+    background-image: url(../images/email.png);
+    position: absolute;
+    left: -28px;
+    top: 3px;
+    background-repeat: no-repeat;
+}
+
+
+.email-no-underline {
+    position: relative;
+}
+
+
+.email-no-underline:before {
+    content:"";
+    width: 19px;
+    height: 19px;
+    background-image: url(../images/skype.png);
+    position: absolute;
+    left: -28px;
+    top: 3px;
+    background-repeat: no-repeat;
+}
+
+
+footer {
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+
+ul {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
