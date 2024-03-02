@@ -36,10 +36,8 @@ body {
 
 
 .wrapper {
-    width: 80%;
     margin: auto;
     max-width: 960px;
-    min-height: 100%;
 }
 
 
@@ -136,6 +134,12 @@ body {
     font-weight: bold;
 }
 
+
+.main-flex {
+    justify-content: space-between;
+}
+
+
 .main h1 {
     font-size: 30px;
     color: #24242b;
@@ -188,6 +192,7 @@ aside ul {
 
 footer {
     background-color:  #ededf5;
+    display: flex;
 }
 
 
@@ -236,3 +241,47 @@ li:hover {
     background-color: #e4e4ec;
 
 }
+
+
+
+.li {
+    background-color: #1f1f56 ;
+}
+
+.project-category ul {
+    min-width: 220px;
+}
+
+
+.project-cards {
+    column-gap: 30px;
+}
+
+
+
+.ul1 {
+   margin-left: 30px;
+}
+
+
+footer .ul1, .ul2 {
+    justify-content: space-between;
+}
+
+
+footer .ul2 {
+    margin-left: 140px;
+}
+
+
+footer a {
+    margin-left: 180px;
+}
+
+
+
+footer .a2 {
+    margin-left: 90px;
+}
+
+
