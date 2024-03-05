@@ -31,6 +31,12 @@ body {
     height: 100%;
 }
 
+
+ul {
+    list-style: none;
+}
+
+
 .header-line {
     background-color: #1f1f56;
     padding-bottom: 21px;
@@ -50,9 +56,15 @@ body {
 }
 
 
+footer li:hover {
+    color: #fd8300;
+}
+
+
 .navigation {
     display: flex;
     column-gap: 20px;
+    text-decoration: none;
 }
 
 
@@ -290,7 +302,7 @@ aside ul {
 }
 
 
-li:hover {
+aside li:hover {
     background-color: #fd8300;
 }
 
