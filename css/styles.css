@@ -58,6 +58,7 @@ body {
 
 .navigation:hover {
     color: #fd8300;
+    transition: 0.3s;
 }
 
 
@@ -69,6 +70,22 @@ body {
 
 
 
+
+.project-cards p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+}
+
+
+
+.project-category .li {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab"; 
+}
 
 
 .wrapper {
