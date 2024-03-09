@@ -343,20 +343,33 @@ aside li:hover {
     background-color: #fd8300;
 }
 
-.aside li {
+aside li {
     background-color: #e4e4ec;
+    position: relative;
+    padding-right: 20px;
 }
 
 
 
 aside li:after {
-    content: " >";
-    margin-left: 25px;
-
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    display: block;
+    transform: rotate(45deg);
+    right: 15px;
+    position: absolute;
+    top: 20px;
 }
 
+
+
+
+
 aside li:first-child:after {
-    content: "";
+    display: none;
 } 
 
 
@@ -548,8 +561,24 @@ p {
 
 
 .pidmenu:hover {
-    background-color: #cecedd;
+    display: block;
 }
+
+
+
+.pidmenu li {
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #666666;
+    padding-left: 30px;
+}
+
+
+.pidmenu li:hover {
+    background-color: #cecedd;
+    color: #666666;
+}
+
 
 
 .ul2 {
