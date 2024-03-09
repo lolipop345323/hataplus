@@ -32,6 +32,12 @@ body {
 }
 
 
+* {
+    margin: 0; padding: 0;
+}
+
+
+
 ul {
     list-style: none;
 }
@@ -42,6 +48,10 @@ ul {
     padding-bottom: 21px;
     padding-top: 21px;
 }
+
+
+
+
 
 .logo-contactinfo {
     padding: 35px 0px;
@@ -68,10 +78,6 @@ footer li:hover {
 }
 
 
-.navigation:hover {
-    color: #fd8300;
-    transition: 0.3s;
-}
 
 
 .sociality {
@@ -127,7 +133,6 @@ footer li:hover {
 .emails a {
     font-size: 16px;
     line-height: 1.5em;
-    text-decoration: underline;
     color: #25252c;
 }
 
@@ -147,6 +152,14 @@ footer li:hover {
     font-weight: bold;
     padding: 12px 30px;
     text-decoration: none;
+}
+
+
+
+.button:hover {
+    background-color: #fd8300;
+    color: white;
+    transition: 0.3s;
 }
 
 
@@ -176,6 +189,7 @@ footer li:hover {
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
+    margin-bottom: 6px;
 }
 
 
@@ -210,11 +224,25 @@ footer li:hover {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    margin-bottom: 30px;
 }
 
 
-.main p {
+.main .p1 {
+    width: 90%;
     font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+
+.main .p2  {
+    width: 90%;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    margin-bottom: 30px;
 }
 
 
@@ -224,8 +252,17 @@ footer li:hover {
     text-decoration: underline;
     color: #fd8300;
     font-weight: bold;
+    margin-bottom: 30px;    
 }
    
+
+.part1 {
+    width: 713px;
+    height: 1px;
+    background-color: #e4e4ec;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 
 
 section img {
@@ -311,9 +348,34 @@ aside li:hover {
 }
 
 
+
+aside li:after {
+    content: " >";
+    margin-left: 25px;
+
+}
+
+aside li:first-child:after {
+    content: "";
+} 
+
+
 .li {
     background-color: #1f1f56 ;
 }
+
+
+.li:first-child:hover {
+    background-color: #1f1f56 ;
+}
+
+
+.aside ul {
+    border-radius: 30px;
+}
+
+
+
 
 .project-category ul {
     min-width: 220px;
@@ -328,6 +390,11 @@ aside li:hover {
 .phone {
     position: relative;
 }
+
+
+
+
+
 
 .phone:before {
     content:"";
@@ -407,7 +474,7 @@ p {
 
 .tw {
     width: 20px;
-    height: 15px;
+    height: 16px;
     background-position: 40px 19px;
 }
 
@@ -433,6 +500,9 @@ p {
     padding-left: 470px;
     padding-right: 470px;
     padding-bottom: 15px;
+    font-size: 13px;
+    line-height: 1.3em;
+    color: #9999a6;
 }
 
 
@@ -447,3 +517,101 @@ p {
     margin-bottom: 50px;
 }
 
+
+.project-cards strong {
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #1f1f56;
+    cursor: pointer;
+}
+
+
+.project-cards strong:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.project-cards img {
+    height: 156px;
+}
+
+
+
+
+.pidmenu {
+    box-shadow: inset 0px -1px 0px #cecedd;
+    background-color: #e4e4ec;
+}
+
+
+
+.pidmenu:hover {
+    background-color: #cecedd;
+}
+
+
+.ul2 {
+    margin-right: 160px;
+    margin-left: 145px;
+}
+
+
+.phone-numbers {
+    margin-right: 60px;
+}
+
+
+
+footer li {
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #666666;
+}
+
+
+
+footer li:hover {
+    color: #fd8300;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.emails a {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #25252c;
+    text-decoration: none;
+}
+
+
+.emails a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+aside {
+    cursor: pointer;
+}
+
+
+.part2 {
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+}
+
+
+
+.logo-contactinfo .emails {
+    margin-left: 40px;
+}
+
+
+.logo-contactinfo .phone-numbers {
+    margin-right: 30px;
+}
