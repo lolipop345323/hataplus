@@ -78,6 +78,11 @@ footer li:hover {
 }
 
 
+.navigation:hover {
+    color: #fd8300;
+}
+
+
 
 
 .sociality {
@@ -257,7 +262,7 @@ footer li:hover {
    
 
 .part1 {
-    width: 713px;
+    width: 100%;
     height: 1px;
     background-color: #e4e4ec;
     margin-bottom: 30px;
@@ -273,6 +278,7 @@ section img {
 
 section h2 {
     margin-bottom: auto;
+    font-family: "Roboto Slab";
 }
 
 
@@ -341,12 +347,23 @@ aside ul {
 
 aside li:hover {
     background-color: #fd8300;
+    color: #dcdce6;
 }
 
 aside li {
     background-color: #e4e4ec;
     position: relative;
     padding-right: 20px;
+}
+
+
+aside li:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+
+aside li:last-child {
+    border-radius: 0 0 5px 5px;
 }
 
 
@@ -362,6 +379,13 @@ aside li:after {
     right: 15px;
     position: absolute;
     top: 20px;
+}
+
+
+
+
+aside li:after:hover {
+    transform: rotate(90deg);
 }
 
 
@@ -546,8 +570,15 @@ p {
 
 
 
+.project-cards img:hover {
+    text-decoration: underline;
+}
+
+
+
 .project-cards img {
     height: 156px;
+    cursor: pointer;
 }
 
 
@@ -587,8 +618,18 @@ p {
 }
 
 
+
+
+article a {
+    text-decoration: none;
+}
+
+
+
+
 .phone-numbers {
     margin-right: 60px;
+    margin-left: 20px;
 }
 
 
@@ -644,3 +685,7 @@ aside {
 .logo-contactinfo .phone-numbers {
     margin-right: 30px;
 }
+
+
+
+
