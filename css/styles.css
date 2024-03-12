@@ -688,4 +688,12 @@ aside {
 
 
 
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
 
+
+.consultatoin {
+    margin-left: 90px;
+}
