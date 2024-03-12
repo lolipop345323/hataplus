@@ -78,8 +78,9 @@ footer li:hover {
 }
 
 
-.navigation:hover {
+.navigation a:hover {
     color: #fd8300;
+    transition: 0.3s;
 }
 
 
@@ -259,6 +260,11 @@ footer li:hover {
     font-weight: bold;
     margin-bottom: 30px;    
 }
+
+
+main a:hover {
+    text-decoration: none;
+}
    
 
 .part1 {
@@ -347,7 +353,7 @@ aside ul {
 
 aside li:hover {
     background-color: #fd8300;
-    color: #dcdce6;
+    color: #fff;
 }
 
 aside li {
@@ -368,7 +374,12 @@ aside li:last-child {
 
 
 
-aside li:after {
+.pidmenu li:last-child {
+    border-radius: 0;
+}
+
+
+aside li a:not(.pidmenu li a ):after {
     content: "";
     width: 10px;
     height: 10px;
@@ -382,17 +393,21 @@ aside li:after {
 }
 
 
+aside a {
+    text-decoration: none;
+}
 
-
-aside li:after:hover {
-    transform: rotate(90deg);
+aside li {
+    position: relative;
 }
 
 
+aside li:hover a:after {
+    transform: rotate(135deg);
+}
 
 
-
-aside li:first-child:after {
+aside li:first-child a:after {
     display: none;
 } 
 
@@ -597,7 +612,7 @@ p {
 
 
 
-.pidmenu li {
+.pidmenu li a {
     font-size: 14px;
     line-height: 1.7em;
     color: #666666;
@@ -607,7 +622,6 @@ p {
 
 .pidmenu li:hover {
     background-color: #cecedd;
-    color: #666666;
 }
 
 
@@ -697,3 +711,36 @@ aside {
 .consultatoin {
     margin-left: 90px;
 }
+
+
+
+
+.project-cards figure:hover strong {
+    text-decoration: underline;
+}
+
+
+
+
+.project-category li:not(:last-child, :first-child, .pidmenu li), .pidmenu li:last-child
+ {
+    border-bottom: 1px solid #666666;
+}
+
+
+
+aside li a {
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #25252c;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+aside li:not(.pidmenu li):hover a {
+    color: #fff;
+}
+
+header 
