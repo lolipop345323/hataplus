@@ -381,15 +381,16 @@ aside li:last-child {
 
 aside li a:not(.pidmenu li a ):after {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
     display: block;
     transform: rotate(45deg);
     right: 15px;
     position: absolute;
-    top: 20px;
+    top: 27px;
+    transition: 0.5s;
 }
 
 
@@ -743,4 +744,3 @@ aside li:not(.pidmenu li):hover a {
     color: #fff;
 }
 
-header 
