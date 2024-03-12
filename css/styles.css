@@ -725,7 +725,7 @@ aside {
 
 .project-category li:not(:last-child, :first-child, .pidmenu li), .pidmenu li:last-child
  {
-    border-bottom: 1px solid #666666;
+    border-bottom: 1px solid #cdcddd;
 }
 
 
