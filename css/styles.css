@@ -108,7 +108,8 @@ footer li:hover {
     line-height: 24px;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Roboto Slab"; 
+    font-family: "Roboto Slab";
+    padding: 15px;
 }
 
 
@@ -342,7 +343,6 @@ li:hover + ul {
 
 aside li {
     background-color: #e4e4ec;
-    padding: 18px 15px;
 }
 
 
@@ -359,7 +359,6 @@ aside li:hover {
 aside li {
     background-color: #e4e4ec;
     position: relative;
-    padding-right: 20px;
 }
 
 
@@ -609,16 +608,11 @@ p {
 
 
 
-.pidmenu:hover {
-    display: block;
-}
 
-
-
-.pidmenu li a {
+.pidmenu li a { 
     font-size: 14px;
     line-height: 1.7em;
-    color: #666666;
+    color: #666666 !important;
     padding-left: 30px;
 }
 
@@ -690,6 +684,7 @@ aside {
     width: 1px;
     height: 51px;
     background-color: #e4e4ec;
+    margin-left: -16px;
 }
 
 
@@ -733,11 +728,13 @@ aside {
 
 
 aside li a {
+    display: inline-block;
     font-size: 14px;
     line-height: 1.7em;
     color: #25252c;
     font-family: Arial, Helvetica, sans-serif;
-
+    padding: 18px 20px;
+    
 }
 
 
@@ -746,12 +743,27 @@ aside li:not(.pidmenu li):hover a {
     color: #fff;
 }
 
+aside li .pidmenu {
+    display: none;
+}
+
+aside li:hover .pidmenu {
+    display: block;
+}
+
+
+article a {
+    cursor: pointer;
+}
+
 
 
 .table {
     display: table;
     width: 100%;
     cursor: pointer;
+    border-collapse: 0;
+    border: 0;
 }
 
 
@@ -788,3 +800,7 @@ aside li:not(.pidmenu li):hover a {
     font-family: "Roboto Slab";
 }
 
+
+*a {
+    cursor: pointer;
+}
