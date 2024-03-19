@@ -299,6 +299,11 @@ section h2 {
 }
 
 
+.sign {
+    padding-top: 40px;
+}
+
+
 aside ul {
     list-style-type: none;
 }
@@ -598,9 +603,7 @@ p {
 
 
    
-.project-cards img:hover {
-    text-decoration: underline;
-}
+
 
 
 
@@ -618,7 +621,10 @@ p {
     background-color: #e4e4ec;
 }
 
-
+.tr > .tc:last-child p, .tr1 > .tc:last-child p {
+    text-align: right;
+    padding-right: 20px;
+}
 
 
 .pidmenu li a { 
@@ -774,14 +780,20 @@ article a {
     display: table;
     width: 100%;
     cursor: pointer;
-    border-collapse: 0;
-    border: 0;
 }
 
 
 
 
-.tr1, .tr {
+.trlast {
+    border-radius: 5px;
+    display: block;
+}
+
+
+
+
+.tr {
     display: table-row;
     background-color: #e4e4ec;
 }
@@ -798,9 +810,6 @@ article a {
 }
 
 
-.tr1:hover {
-    background-color:  #1f1f56 !important;
-}
 
 
 .p5 {
@@ -844,13 +853,13 @@ article a {
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
-    text-decoration: none;
+    text-decoration: underline;
     margin-bottom: 30px;
 }
 
 
 .aindex3 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -865,18 +874,61 @@ article a {
     box-shadow: inset 0px -1px 0px #cecedd;
 }
 
+header {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+
+
 
 .tr1 {
+    display: table-row;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 3px;
-    background-color: #1f1f56;
     font-size: 14px;
     line-height: 1.7em;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
+
+
+.tr1 > .tc {
+    background-color: #1f1f56;
+}
+
+
+.tc {
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #666666;
+}
+
+
+.tr1 > .tc {
+    color:#fff;
+    font-family: "Roboto Slab";
+}
+
+
+.table .trlast {
+    box-shadow: none;
+}
+
+
+.tr1 > .tc:first-child {
+    border-radius: 5px 0 0 0;
+
+}
+
+
+.tr1 .tc:last-child {
+    border-radius: 0 5px 0 0;
+}
+
+
 
 
 *a {
