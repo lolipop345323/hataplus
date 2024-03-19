@@ -806,6 +806,10 @@ article a {
 
 .tr:hover {
     background-color: #fd8300;
+}
+
+
+.tr:hover .tc > p {
     color: white;
 }
 
@@ -928,6 +932,15 @@ header {
     border-radius: 0 5px 0 0;
 }
 
+
+.trlast .tc:first-child {
+    border-radius: 0 0 0 5px;
+}
+
+
+.trlast .tc:last-child {
+    border-radius: 0 0 5px 0;
+}
 
 
 
